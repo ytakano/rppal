@@ -464,6 +464,8 @@ impl InputPin {
 
         pin.set_pullupdown(pud_mode);
 
+        super::select::Select::new(16);
+
         InputPin {
             pin,
             prev_mode,
